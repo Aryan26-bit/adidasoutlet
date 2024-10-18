@@ -1,0 +1,27 @@
+.footer-container
+{
+display: flex;
+flex-direction: column;
+background-color: #282C31;
+padding-top:4vh;
+height: 10vh;
+width: 100%;
+gap: 3vh;
+align-items: center;
+
+}
+
+.footer-container-inner-data
+{
+display: flex;
+flex-direction: row;
+gap: 2vh;
+font-size: 12px;
+color: #fff;
+}
+
+.footer-inside-content
+{
+    color: #fff;
+    font-size: 12px;
+}

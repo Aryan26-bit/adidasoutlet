@@ -1,0 +1,60 @@
+.signup-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2vh;
+
+  justify-content: center;
+  padding: 5vh;
+  background-color: #ede734;
+  align-items: center;
+}
+
+.join-adidas-text {
+  font-size: 2.8vh;
+  color: #000;
+  font-weight: 600;
+}
+
+.btn-sign-up {
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+  outline: none;
+  padding: 1vh 2.5vh;
+}
+
+.top-header {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .top-header {
+    background-color: #000;
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .headname-yourbag {
+    text-align: center;
+    width: 50%;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .headname-login {
+    text-align: center;
+    width: 50%;
+    color: #fff;
+    font-weight: 700;
+  }
+}

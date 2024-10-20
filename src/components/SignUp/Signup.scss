@@ -3,6 +3,7 @@
 .signup-container {
   @include horizontalFlex($gap-size: 2vh, $justify: center, $width: auto);
   padding: 5vh;
+  z-index: -1;
   background-color: var(--yellow-color);
 }
 

@@ -5,6 +5,7 @@
   border: 0.2px solid var(--black-color);
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .arrow-down-icon {
@@ -63,6 +64,17 @@
 .signup-text {
   font-size: 11px;
   color: var(--white-color);
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 1;
 }
 
 .navbar-right-lists {
@@ -135,7 +147,7 @@ input[type="text"] {
 }
 
 .dropdown-content {
-  @include verticalFlex($justify: center, $gap-size: 0vh);
+  @include verticalFlex($justify: normal, $gap-size: 0vh);
   height: 100%;
 }
 

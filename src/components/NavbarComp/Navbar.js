@@ -12,6 +12,16 @@ const Navbar = () => {
   const [hoveredCategory, setHoveredCategory] = useState(null);
   const dropdownRef = useRef(null);
 
+  const [showSignupText, setShowSignupText] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowSignupText((prev) => !prev);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const handleMouseEnter = (category) => {
     setHoveredCategory(category);
   };
@@ -32,7 +42,13 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="navbar-signup-container">
-        <div className="signup-text">SIGN UP AND GET 15%</div>
+        <div
+          className={`signup-text ${showSignupText ? "fade-in" : "fade-out"}`}
+        >
+          {showSignupText
+            ? "SIGN UP AND GET 15%"
+            : "FREE DELIVERY RETURN & EXCHANGE"}
+        </div>
         <div>
           <MdKeyboardArrowDown className="arrow-down-icon" />
         </div>

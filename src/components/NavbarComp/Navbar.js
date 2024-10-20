@@ -47,7 +47,7 @@ const Navbar = () => {
         >
           {showSignupText
             ? "SIGN UP AND GET 15%"
-            : "FREE DELIVERY,RETURN & EXCHANGE"}
+            : "FREE DELIVERY, RETURN & EXCHANGE"}
         </div>
         <div>
           <MdKeyboardArrowDown className="arrow-down-icon" />

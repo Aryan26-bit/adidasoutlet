@@ -1,13 +1,13 @@
-import React from "react";
-import "./CategoryCard.scss";
+// import React from "react";
+// import "./CategoryCard.scss";
 
-const CategoryCard = ({ title, imageUrl }) => {
-  return (
-    <div className="category-card">
-      <img src={imageUrl} alt={title} />
-      <a href="#">{title}</a>
-    </div>
-  );
-};
+// const CategoryCard = ({ title, imageUrl }) => {
+//   return (
+//     <div className="category-card">
+//       <img src={imageUrl} alt={title} />
+//       <a href="#">{title}</a>
+//     </div>
+//   );
+// };
 
-export default CategoryCard;
+// export default CategoryCard;

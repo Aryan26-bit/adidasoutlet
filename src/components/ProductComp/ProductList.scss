@@ -1,3 +1,5 @@
+@import "./../../index.scss";
+
 .product-container {
   display: flex;
   flex-wrap: wrap;
@@ -10,7 +12,7 @@
   border: 1px solid #ddd;
   text-align: center;
   margin: 1vh;
-  background-color: #fff;
+  background-color: var(--white-color);
   transition: box-shadow 0.3s ease;
 }
 
@@ -51,7 +53,7 @@
 }
 
 .discount {
-  color: #e32b2b;
+  color: var(--red-color);
   margin-left: 5px;
 }
 

@@ -1,3 +1,5 @@
+@import "./../../index.scss";
+
 .sale-container {
   font-family: "Helvetica", "Arial", sans-serif;
   padding: 20px;
@@ -13,7 +15,7 @@
 .breadcrumb .back-link {
   font-weight: bold;
   text-decoration: none;
-  color: #000;
+  color: var(--black-color);
 }
 
 .breadcrumb-text {
@@ -41,7 +43,7 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--white-color);
 
   width: 160px;
   text-align: center;
@@ -60,12 +62,12 @@
   padding: 1.5vh;
   font-weight: bold;
   text-decoration: underline;
-  color: black;
+  color: var(--black-color);
 }
 
 .sale-card {
-  background-color: #ff6600;
-  color: white;
+  background-color: var(--orange-color);
+  color: var(--white-color);
   padding: 20px;
   text-align: center;
   flex: 1;
@@ -79,7 +81,7 @@
 }
 
 .blue-container {
-  background-color: #2596be;
+  background-color: var(--sky-color);
   padding: 9vh;
   z-index: -1;
   margin-top: -10vh;

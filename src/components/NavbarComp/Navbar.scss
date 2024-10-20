@@ -1,6 +1,8 @@
+@import "./../../general.scss";
+@import "./../../index.scss";
 .navbar-container {
   width: 100%;
-  border: 0.2px solid #000;
+  border: 0.2px solid var(--black-color);
   position: sticky;
   top: 0;
 }
@@ -10,60 +12,80 @@
   height: 3%;
 }
 .navbar-signup-container {
-  border: 1px solid #eceff1;
+  border: 1px solid var(--border-color);
 }
 
 .navbar-signup-container {
   display: flex;
   justify-content: center;
-  background-color: #000;
+  background-color: var(--black-color);
   padding: 1vh;
 }
 
 .category-item-festive {
-  color: #e32b2b;
+  color: var(--red-color);
   position: relative;
   cursor: pointer;
 }
 
 .navbar-inside-container {
+  @include verticalFlex(
+    $width: auto,
+    $align: normal,
+    $justify: normal,
+    $gap-size: 0vh
+  );
   padding: 0.5vh;
-  display: flex;
-  background-color: #fff;
-  flex-direction: column;
+  // display: flex;
+  background-color: var(--white-color);
+  // flex-direction: column;
 }
 
 .navbar-container-lists {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  @include horizontalFlex($width: auto, $gap-size: 0vh);
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-between;
 }
 
 .list-items {
-  display: flex;
+  @include horizontalFlex(
+    $gap-size: 2vh,
+    $align: normal,
+    $justify: normal,
+    $width: auto
+  );
+  // display: flex;
   font-size: 14px;
-  flex-direction: row;
-  gap: 2vh;
+  // flex-direction: row;
+  // gap: 2vh;
 }
 
 .signup-text {
   font-size: 11px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .navbar-right-lists {
-  display: flex;
-  justify-content: end;
+  @include horizontalFlex(
+    $justify: end,
+    $align: normal,
+    $gap-size: 2vh,
+    $width: auto
+  );
+  // display: flex;
+  // justify-content: end;
   font-size: 12px;
-  flex-direction: row;
-  gap: 2vh;
+  // flex-direction: row;
+  // gap: 2vh;
 }
 
 .search-bar-container {
-  display: flex;
-  flex-direction: row;
-  gap: 1vh;
+  @include horizontalFlex($align: normal, $justify: normal, $width: auto);
+  // display: flex;
+  // flex-direction: row;
+  // gap: 1vh;
 }
 
 .category-item {
@@ -73,7 +95,7 @@
   transition: color 0.3s ease-in-out;
 
   &:hover {
-    color: #000;
+    color: var(--black-color);
   }
 
   &::after {
@@ -83,7 +105,7 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #000;
+    background-color: var(--black-color);
     transition: width 0.3s ease-in-out;
   }
 
@@ -100,8 +122,8 @@
 input[type="text"] {
   padding: 5px;
   width: 100%;
-  border: 1px solid #ddd;
-  background-color: #eceff1;
+  border: 1px solid var(--border-color);
+  background-color: var(--border-color);
   border-radius: 3px;
 }
 
@@ -110,23 +132,24 @@ input[type="text"] {
 
   left: 0;
   height: 60vh;
-  border: 1px solid #000;
+  border: 1px solid var(--black-color);
   width: 100vw;
-  background-color: #fff;
+  background-color: var(--white-color);
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000;
+  color: var(--black-color);
   transition: all 0.3s ease-in-out;
 }
 
 .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  @include verticalFlex($justify: center, $gap-size: 0vh);
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // width: 100%;
   height: 100%;
 }
 

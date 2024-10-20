@@ -1,7 +1,15 @@
+@import "./../../general.scss";
+@import "./../../index.scss";
 .footerpart-desktop {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include horizontalFlex(
+    $align: normal,
+    $justify: center,
+    $width: auto,
+    $gap-size: 0vh
+  );
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
   padding-top: 4vh;
   padding-bottom: 4vh;
   padding-left: 10vh;
@@ -9,28 +17,29 @@
 }
 
 .footerpart-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include verticalFlex($width: auto, $justify: normal, $gap-size: 0vh);
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
-.footerpart-list-items
-{
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
+.footerpart-list-items {
+  @include verticalFlex($width: auto, $align: normal, $justify: normal);
+  // display: flex;
+  // flex-direction: column;
+  // gap: 1vh;
 }
 
 .mobile-view-footer-part {
   display: none;
 }
 
-.footer-part-mobile-view-list
-{
-  display: flex;
-  flex-direction: column;
-  gap: 4vh;
-  align-items: center;
+.footer-part-mobile-view-list {
+  @include verticalFlex($gap-size: 4vh, $justify: normal, $width: auto);
+  // display: flex;
+  // flex-direction: column;
+  // gap: 4vh;
+  // align-items: center;
   white-space: nowrap;
   font-size: 12px;
 }
@@ -41,32 +50,33 @@
   }
 
   .mobile-view-footer-part {
-    background-color: #000;
-    display: flex;
+    @include horizontalFlex($align: normal, $width: auto, $gap-size: 0vh);
+    background-color: var(--black-color);
+    // display: flex;
     padding: 2vh;
-    justify-content: space-between;
-    flex-direction: row;
+    // justify-content: space-between;
+    // flex-direction: row;
   }
 
   .mobile-view-first-section {
-    display: flex;
-    color: #fff;
-    flex-direction: column;
-    gap: 1vh;
+    @include verticalFlex($align: normal, $justify: normal, $width: auto);
+    // display: flex;
+    color: var(--white-color);
+    // flex-direction: column;
+    // gap: 1vh;
   }
 
   .mobile-view-second-section {
-    display: flex;
-    color: #fff;
-    flex-direction: column;
-    gap: 1vh;
+    @include verticalFlex($align: normal, $justify: normal, $width: auto);
+    // display: flex;
+    color: var(--white-color);
+    // flex-direction: column;
+    // gap: 1vh;
   }
 }
 
-
 @media only screen and (min-width: 0px) and (max-width: 320px) {
-  .mobile-view-second-section
-  {
-overflow: auto;
+  .mobile-view-second-section {
+    overflow: auto;
   }
 }

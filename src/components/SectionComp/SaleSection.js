@@ -17,7 +17,7 @@ const SaleSection = () => {
     <div className="sale-container">
       <div className="sale-content-container">
         <div className="breadcrumb">
-          <a href="#" className="back-link">
+          <a href="https://www.adidas.co.in/special_offer" className="back-link">
             Back
           </a>
           <span className="breadcrumb-text">Home / Outlet</span>
@@ -32,7 +32,7 @@ const SaleSection = () => {
           {categories.map((category, index) => (
             <div key={index} className="card">
               <img src={category.imageUrl} alt={category.title} />
-              <a href="#" className="category-title">
+              <a href="https://www.adidas.co.in/special_offer" className="category-title">
                 {category.title}
               </a>
             </div>

@@ -1,24 +1,27 @@
+@import "./../../general.scss";
+@import "./../../index.scss";
 .signup-container {
-  display: flex;
-  flex-direction: row;
-  gap: 2vh;
+  @include horizontalFlex($gap-size: 2vh, $justify: center, $width: auto);
+  // display: flex;
+  // flex-direction: row;
+  // gap: 2vh;
 
-  justify-content: center;
+  // justify-content: center;
   padding: 5vh;
-  background-color: #ede734;
-  align-items: center;
+  background-color: var(--yellow-color);
+  // align-items: center;
 }
 
 .join-adidas-text {
   font-size: 2.8vh;
-  color: #000;
+  color: var(--black-color);
   font-weight: 600;
 }
 
 .btn-sign-up {
-  color: #fff;
+  color: var(--white-color);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #000;
+  background-color: var(--black-color);
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -37,24 +40,25 @@
   }
 
   .top-header {
-    background-color: #000;
+    @include horizontalFlex($justify: normal, $gap-size: 0vh, $width: auto);
+    background-color: var(--black-color);
     padding: 2vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
   }
 
   .headname-yourbag {
     text-align: center;
     width: 50%;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 700;
   }
 
   .headname-login {
     text-align: center;
     width: 50%;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 700;
   }
 }

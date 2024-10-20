@@ -1,3 +1,6 @@
+@import "./../../general.scss";
+@import "./../../index.scss";
+
 .categories-grid {
   padding-left: 10vh;
   padding-right: 10vh;
@@ -14,22 +17,31 @@
 }
 
 .category-section-products {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include horizontalFlex($width: auto, $gap-size: 0vh, $align: normal);
+  z-index: -1;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
 }
 
 .category-products-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-  align-items: center;
+  @include verticalFlex($gap-size: 2vh, $justify: normal, $width: auto);
+  // display: flex;
+  // flex-direction: column;
+  // gap: 2vh;
+  // align-items: center;
 }
 
 .products-list-items {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
+  @include verticalFlex(
+    $gap-size: 1.5vh,
+    $width: auto,
+    $justify: normal,
+    $align: normal
+  );
+  // display: flex;
+  // flex-direction: column;
+  // gap: 1.5vh;
   padding: 0vh;
 }
 

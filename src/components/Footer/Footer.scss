@@ -1,0 +1,28 @@
+@import "./../../general.scss";
+@import "./../../index.scss";
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #282c31;
+  padding-top: 4vh;
+  height: 10vh;
+  width: 100%;
+  gap: 3vh;
+  align-items: center;
+}
+
+.footer-container-inner-data {
+  @include horizontalFlex(
+    $gap-size: 2vh,
+    $align: normal,
+    $justify: normal,
+    $width: auto
+  );
+  font-size: 12px;
+  color: var(--white-color);
+}
+
+.footer-inside-content {
+  color: var(--white-color);
+  font-size: 12px;
+}

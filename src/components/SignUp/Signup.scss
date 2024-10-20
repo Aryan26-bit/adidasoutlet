@@ -2,14 +2,8 @@
 @import "./../../index.scss";
 .signup-container {
   @include horizontalFlex($gap-size: 2vh, $justify: center, $width: auto);
-  // display: flex;
-  // flex-direction: row;
-  // gap: 2vh;
-
-  // justify-content: center;
   padding: 5vh;
   background-color: var(--yellow-color);
-  // align-items: center;
 }
 
 .join-adidas-text {
@@ -43,9 +37,6 @@
     @include horizontalFlex($justify: normal, $gap-size: 0vh, $width: auto);
     background-color: var(--black-color);
     padding: 2vh;
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
   }
 
   .headname-yourbag {

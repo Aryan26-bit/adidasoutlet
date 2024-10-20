@@ -7,6 +7,12 @@
   top: 0;
 }
 
+.arrow-down-icon {
+  color: var(--white-color);
+  font-size: 2vh;
+  cursor: pointer;
+}
+
 .adidas_logo_desktop {
   width: 3%;
   height: 3%;
@@ -36,17 +42,11 @@
     $gap-size: 0vh
   );
   padding: 0.5vh;
-  // display: flex;
   background-color: var(--white-color);
-  // flex-direction: column;
 }
 
 .navbar-container-lists {
   @include horizontalFlex($width: auto, $gap-size: 0vh);
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: space-between;
 }
 
 .list-items {
@@ -56,10 +56,8 @@
     $justify: normal,
     $width: auto
   );
-  // display: flex;
+
   font-size: 14px;
-  // flex-direction: row;
-  // gap: 2vh;
 }
 
 .signup-text {
@@ -74,18 +72,11 @@
     $gap-size: 2vh,
     $width: auto
   );
-  // display: flex;
-  // justify-content: end;
   font-size: 12px;
-  // flex-direction: row;
-  // gap: 2vh;
 }
 
 .search-bar-container {
   @include horizontalFlex($align: normal, $justify: normal, $width: auto);
-  // display: flex;
-  // flex-direction: row;
-  // gap: 1vh;
 }
 
 .category-item {
@@ -145,11 +136,6 @@ input[type="text"] {
 
 .dropdown-content {
   @include verticalFlex($justify: center, $gap-size: 0vh);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // width: 100%;
   height: 100%;
 }
 

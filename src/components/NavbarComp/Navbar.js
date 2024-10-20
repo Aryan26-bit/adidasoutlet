@@ -34,9 +34,7 @@ const Navbar = () => {
       <div className="navbar-signup-container">
         <div className="signup-text">SIGN UP AND GET 15%</div>
         <div>
-          <MdKeyboardArrowDown
-            style={{ color: "#fff", fontSize: "2vh", cursor: "pointer" }}
-          />
+          <MdKeyboardArrowDown className="arrow-down-icon" />
         </div>
       </div>
 

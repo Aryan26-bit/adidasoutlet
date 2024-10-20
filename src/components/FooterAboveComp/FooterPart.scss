@@ -7,27 +7,23 @@
     $width: auto,
     $gap-size: 0vh
   );
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
   padding-top: 4vh;
   padding-bottom: 4vh;
   padding-left: 10vh;
   padding-right: 10vh;
 }
 
+.footer-part-heading-part {
+  font-weight: 800;
+  font-size: 2vh;
+}
+
 .footerpart-list {
   @include verticalFlex($width: auto, $justify: normal, $gap-size: 0vh);
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
 
 .footerpart-list-items {
   @include verticalFlex($width: auto, $align: normal, $justify: normal);
-  // display: flex;
-  // flex-direction: column;
-  // gap: 1vh;
 }
 
 .mobile-view-footer-part {
@@ -36,12 +32,12 @@
 
 .footer-part-mobile-view-list {
   @include verticalFlex($gap-size: 4vh, $justify: normal, $width: auto);
-  // display: flex;
-  // flex-direction: column;
-  // gap: 4vh;
-  // align-items: center;
+
   white-space: nowrap;
   font-size: 12px;
+}
+.insta-logo {
+  font-size: 4vh;
 }
 
 @media (max-width: 960px) {
@@ -52,26 +48,17 @@
   .mobile-view-footer-part {
     @include horizontalFlex($align: normal, $width: auto, $gap-size: 0vh);
     background-color: var(--black-color);
-    // display: flex;
     padding: 2vh;
-    // justify-content: space-between;
-    // flex-direction: row;
   }
 
   .mobile-view-first-section {
     @include verticalFlex($align: normal, $justify: normal, $width: auto);
-    // display: flex;
     color: var(--white-color);
-    // flex-direction: column;
-    // gap: 1vh;
   }
 
   .mobile-view-second-section {
     @include verticalFlex($align: normal, $justify: normal, $width: auto);
-    // display: flex;
     color: var(--white-color);
-    // flex-direction: column;
-    // gap: 1vh;
   }
 }
 

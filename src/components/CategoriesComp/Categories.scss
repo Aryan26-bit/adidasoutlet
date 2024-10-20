@@ -8,6 +8,10 @@
   padding-top: 2vh;
 }
 
+.category-product-list-view {
+  @include verticalFlex($width: auto, $justify: normal);
+}
+
 .our-clothing-heading {
   font-size: 24px;
 }
@@ -19,17 +23,10 @@
 .category-section-products {
   @include horizontalFlex($width: auto, $gap-size: 0vh, $align: normal);
   z-index: -1;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-between;
 }
 
 .category-products-list {
   @include verticalFlex($gap-size: 2vh, $justify: normal, $width: auto);
-  // display: flex;
-  // flex-direction: column;
-  // gap: 2vh;
-  // align-items: center;
 }
 
 .products-list-items {
@@ -39,9 +36,6 @@
     $justify: normal,
     $align: normal
   );
-  // display: flex;
-  // flex-direction: column;
-  // gap: 1.5vh;
   padding: 0vh;
 }
 

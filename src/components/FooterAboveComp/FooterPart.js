@@ -9,7 +9,7 @@ const FooterPart = () => {
       <div className="footerpart-desktop">
         <div className="footerpart-list">
           <ul type="none" className="footerpart-list-items">
-            <span style={{ fontWeight: "800", fontSize: "2vh" }}>PRODUCTS</span>
+            <span className="footer-part-heading-part">PRODUCTS</span>
             <li>Footwear</li>
             <li>Clothing</li>
             <li>Accessories</li>
@@ -23,7 +23,7 @@ const FooterPart = () => {
 
         <div className="footerpart-list">
           <ul type="none" className="footerpart-list-items">
-            <span style={{ fontWeight: "800", fontSize: "2vh" }}>SPORTS</span>
+            <span className="footer-part-heading-part">SPORTS</span>
             <li>CRICKET</li>
             <li>Running</li>
             <li>Football</li>
@@ -38,9 +38,7 @@ const FooterPart = () => {
 
         <div className="footerpart-list">
           <ul type="none" className="footerpart-list-items">
-            <span style={{ fontWeight: "800", fontSize: "2vh" }}>
-              COLLECTIONS
-            </span>
+            <span className="footer-part-heading-part">COLLECTIONS</span>
             <li>Ultraboost</li>
             <li>Superstar</li>
             <li>NMD</li>
@@ -54,7 +52,7 @@ const FooterPart = () => {
 
         <div className="footerpart-list">
           <ul type="none" className="footerpart-list-items">
-            <span style={{ fontWeight: "800", fontSize: "2vh" }}>SUPPORT</span>
+            <span className="footer-part-heading-part">SUPPORT</span>
             <li>Help</li>
             <li>Customer Services</li>
             <li>Returns & Exchanges</li>
@@ -74,9 +72,7 @@ const FooterPart = () => {
           }}
         >
           <ul type="none" className="footerpart-list-items">
-            <span style={{ fontWeight: "800", fontSize: "2vh" }}>
-              COMPANY INFO
-            </span>
+            <span className="footer-part-heading-part">COMPANY INFO</span>
             <li>CRICKET</li>
             <li>Running</li>
             <li>Football</li>
@@ -91,11 +87,9 @@ const FooterPart = () => {
 
         <div className="footerpart-list">
           <ul type="none" className="footerpart-list-items">
-            <span style={{ fontWeight: "800", fontSize: "2vh" }}>
-              FOLLOW US
-            </span>
+            <span className="footer-part-heading-part">FOLLOW US</span>
             <li>
-              <FaSquareInstagram style={{ fontSize: "4vh" }} />
+              <FaSquareInstagram className="insta-logo"/>
             </li>
           </ul>
         </div>

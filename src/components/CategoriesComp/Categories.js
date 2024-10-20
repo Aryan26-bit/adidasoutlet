@@ -23,14 +23,7 @@ const Categories = () => {
           </ul>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "1vh",
-            alignItems: "center",
-          }}
-        >
+        <div className="category-product-list-view">
           <ul
             type="none"
             style={{
@@ -55,14 +48,7 @@ const Categories = () => {
           </ul>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "1vh",
-            alignItems: "center",
-          }}
-        >
+        <div className="category-product-list-view">
           <ul type="none" className="products-list-items">
             <li>Long Sleeves</li>
             <li>Short Sleeves</li>

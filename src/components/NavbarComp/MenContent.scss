@@ -1,8 +1,6 @@
 @import "./../../general.scss";
 @import "./../../index.scss";
 .dropdownMenu {
-
-
   display: flex;
   justify-content: space-between;
 
@@ -14,9 +12,12 @@
 }
 
 .dropdownColumn {
-  @include verticalFlex($gap-size:0vh,$align:normal,$justify:normal,$width:auto);
-  // display: flex;
-  // flex-direction: column;
+  @include verticalFlex(
+    $gap-size: 0vh,
+    $align: normal,
+    $justify: normal,
+    $width: auto
+  );
   padding: 0 20px;
 }
 
